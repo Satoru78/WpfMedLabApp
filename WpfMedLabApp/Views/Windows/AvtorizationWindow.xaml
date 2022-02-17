@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfMedLabApp.AvtorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMedLabApp"
+        mc:Ignorable="d"
+        Icon="/Resource/logo.png"
+        FontFamily="Comic Sans MS"
+        Title="Авторизация" Height="300" Width="350">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Логин:"></TextBlock>
+            <TextBox Name="txbLogin" Width="300"></TextBox>
+            <TextBlock Text="Пароль:"></TextBlock>
+
+            <StackPanel Name="HidePassword" Orientation="Horizontal">
+                <PasswordBox Name="psbPassword" PasswordChanged="psbPassword_PasswordChanged" Width="275.5"></PasswordBox>
+                <Button Name="SeeBtn" Click="SeeBtn_Click" Width="25" BorderBrush="White" Background="White">
+                    <Image Source="/Resource/see.png"></Image>
+                </Button>
+            </StackPanel>
+            <StackPanel Name="SeePassword" Orientation="Horizontal" Visibility="Collapsed">
+                <TextBox Name="txbPassword" Width="275.5"></TextBox>
+                <Button Name="HideseeBtn" Click="HideseeBtn_Click" Width="25" BorderBrush="White" Background="White">
+                    <Image Source="/Resource/hidesee.png"></Image>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <Button Content="Войти" Name="LoginBtn" Click="LoginBtn_Click" Width="145" IsDefault="True" Margin="0,0,11,0"></Button>
+                <Button Content="Отмена" Name="CancelBtn" Click="CancelBtn_Click" Width="145"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

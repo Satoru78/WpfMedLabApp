@@ -1,0 +1,12 @@
+﻿<Application x:Class="WpfMedLabApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfMedLabApp"
+             StartupUri="Views/Windows/AvtorizationWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#76E383"></Setter>
+            <Setter Property="Foreground" Value="#498C51"></Setter>
+        </Style>
+    </Application.Resources>
+</Application>

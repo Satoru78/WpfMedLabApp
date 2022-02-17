@@ -1,0 +1,18 @@
+﻿<Page x:Class="WpfMedLabApp.Views.Pages.AccountantPage.AccountantMainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfMedLabApp.Views.Pages.AccountantPage"
+      mc:Ignorable="d" 
+      FontFamily="Comic Sans MS"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AccountantMainPage">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Отчеты" Name="ReportsBtn" Click="ReportsBtn_Click" Width="200"></Button>
+            <Button Content="Сформировать счет" Name="InvoiceBtn" Click="InvoiceBtn_Click" Margin="5" Width="200"></Button>
+        </StackPanel>
+    </Grid>
+</Page>
